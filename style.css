@@ -1,83 +1,147 @@
 *{
   margin: 0;
   padding: 0;
-}
-
-html{
-  scroll-behavior: smooth;
-  background-color: #0f4c5c;
-}
-
-
-
-header{
-  display: flex;
   box-sizing: border-box;
-  height: 100vh;
+  scroll-behavior: smooth;
+  /*border: white 3px solid;*/
+}
+
+body{
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.5s;
+}
+a:hover{
+  color: #9044b4;
+
+}
+
+
+
+nav{
+  display: flex;
+  position: fixed;
+  transition: top 0.3s;
+  justify-content: space-around;
+  width: 100vw;
+  background-color: black;
+  opacity: 95%;
+  color: white;
+  z-index: 1; /*keep on top of transparent items*/
+  
+  
+}
+
+nav > a#weblogo{
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border: 10px solid white;
-  color: white;
-  opacity: 75%;
 }
 
-header > h1{
-  font-family: 'Parisienne', cursive;
-  font-size: 100px;
+nav > ul{
+  display: flex;
+  list-style: none;
+}
+
+nav > ul > li{
+  font-size: 20px;
   padding: 20px;
 
 }
 
-header > h2{
-  font-family: 'Josefin Slab', serif;
-  font-size: 20px;
+section#home-slide{
+  color: white;
+}
+
+.slide{
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+#home-slide{
+  background-image: linear-gradient(to bottom, #051e45, #181d4c, #2a1951, #3d1253, #4f0251);
+}
+
+#about-slide{
+  background-color: #F1F1E6;
+  color: black;
+}
+
+#about-slide.fa{
+  color: black;
+}
+
+
+.flex-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0vh 5vw;
+}
+
+div#phone-and-name{
+  display: flex;
+  gap:30px;
 
 }
+
+h1{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
+  font-size: 100px;
+  padding: 20px;
+}
+
+h1#webtitle{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+img#headshot{;
+  border: 3px solid white;
+  border-radius: 50%;
+  max-height: 150px;
+  max-width: 150px;
+
+}
+
+h2{
+  font-family: 'Roboto Mono', serif;
+  font-weight: 300;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
 
 
 
 /* Style all font awesome icons */
 .fa {
+  display: flex;
+  align-content: center;
   padding: 50px;
   font-size: 300em;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  text-decoration: none;
   opacity: 75%;
   transition-duration: 0.5s;
 }
 
 /* Add a hover effect if you want */
 .fa:hover {
-  color: #fb8b24;
+  color: #C293FF;
   opacity: 75%;
 }
 
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-  color: white;
-}
-
-/* Instagram */
-.fa-instagram {
-  color: white;
-}
-
-/* LinkedIn */
-.fa-linkedin {
-  color: white;
-}
-
-/* Email */
-.fa-envelope {
+a.fa{
   color: white;
 }
